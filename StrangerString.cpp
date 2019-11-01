@@ -94,7 +94,7 @@ char StrangerString::get_letter() {
 
 CRGB StrangerString::get_color() {
     CRGB color;
-    if ('A' <= m_letter && m_letter < 'Z') {
+    if ('A' <= m_letter && m_letter <= 'Z') {
         if (m_fg_color == -1) {
             color = letter_colors[m_letter-ASCII_OFFSET];
         }
